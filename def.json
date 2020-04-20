@@ -1,0 +1,54 @@
+{
+    "language": "typescript",
+    "keywords": ["typeAliase", "endnl", "injetable", "any", "as", "boolean", "break", "case", "catch", "class", "const", "constructor", "continue", "debugger", "declare", "default", "delete", "do", "else", "endl", "enum", "export", "extends", "false", "finally", "for", "from", "function", "get", "if", "implements", "import", "in", "instanceof", "interface", "let", "module", "new", "null", "number", "of", "package", "private", "protected", "public", "require", "return", "set", "static", "string", "super", "switch", "symbol", "this", "throw", "true", "try", "type", "typeof", "var", "void", "while", "with", "yield"],
+    "commands": {
+        "endl": {
+            "template": ";",
+            "description": "Finaliza um comando e quebra a linha"
+        },
+        "endnl": {
+            "template": ";\n",
+            "description": "Finaliza um comando e quebra a linha"
+        },
+        "break": {
+            "template": "break;"
+        },
+        "continue": {
+            "template": "continue;"
+        },
+        "if": {
+            "template": "if (%s)",
+            "paramList": [{
+                "name": "test",
+                "type": "CodeInterface"
+            }],
+            "description": "Cria um teste condicional."
+        },
+        "typeAliase": {
+            "template": "<%s>",
+            "paramList": [{
+                "name": "test",
+                "type": "string"
+            }],
+            "description": "Cria um teste condicional."
+        },
+        "component": {
+            "template": "@Component({%s})",
+            "paramList": [{
+                "name": "stmt",
+                "type": "CodeInterface"
+            }]
+        },
+        "injetable": {
+            "template": "@Injectable()\n"
+        },
+        "constructor": {
+            "template": "constructor(%s)",
+            "paramList": [{
+                "name": "stmt",
+                "type": "...CodeInterface"
+            }],
+            "delimiter": ", "
+        }
+    }
+}
