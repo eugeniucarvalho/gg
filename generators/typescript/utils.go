@@ -449,6 +449,8 @@ func ConvType(typ string) string {
 		ntype = "string"
 	case "interface{}":
 		ntype = "any"
+	case "T":
+		ntype = "T"
 	default:
 		if ntype[0:3] == "map" {
 			parts := strings.Split(ntype, "|")
