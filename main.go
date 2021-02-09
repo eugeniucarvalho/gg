@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"git.eugeniocarvalho.dev/eugeniucarvalho/gg/generator"
+	"github.com/eugeniucarvalho/gg/generator"
 )
 
 var (
